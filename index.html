@@ -29,7 +29,7 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="">Home<br></a></li>
+                    <li><a href="#hero">Home<br></a></li>
                     <li><a href="#our-services">Services</a></li>
                     <li><a href="#pricing">Pricing Plans</a></li>
                     <li><a href="#how-it-works">How It Works</a></li>
@@ -453,16 +453,30 @@
             <div class="row g-4 justify-content-center">
 
                 <!-- Silver Plan -->
-                <div class="col-md-3" data-plan="Silver" data-price="$59"
-                    data-features='["Teleconsults", "Appointment Booking", "Health Reminders"]'>
+                <div class="col-md-3" data-plan="Silver" data-price="$59" data-features='["24x7 Unlimited Teleconsultation - GP",
+                    "Teleconsultation Specialities - Gynaecology, Pediatrics, Orthopedic",
+                    "Full-Body Health Checkup 50+ Test (Pathology)",
+                    "Dietician/Nutrition Counselling",
+                    "Free Second Opinion",
+                    "Surgery Assistance Service",
+                    "Assistance to In-Person Doctor Visit in Clinic/Hospitals",
+                    "Free Dental Checkup + Discount on Dental Treatments",
+                    "Free Eye Checkup + Discount on Eye Treatment",
+                    "Pharmacy, Lab Tests, Homecare, Ambulance, At Home Doctor Visit",
+                    "Pill Reminder, Vaccination Reminder, E-Medical Locker, Period Tracker, Pregnancy Calculator",
+                    "24x7 Senior Citizen Online Care"
+                    ]' data-extra-features=''>
+
                     <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="pricing-plan-name mb-2">Silver</div>
-                            <div class="pricing-price mb-3">$59 / Year</div>
+                            <div class="pricing-price mb-2">$59 / Year</div>
+                            <div class="pricing-foot mb-3 text-muted">All Basic Plus</div>
                             <ul class="feature-list text-start">
-                                <li><i class="bi bi-check-circle-fill"></i> Teleconsults</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Appointment Booking</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Health Reminders</li>
+                                <li><i class="bi bi-check-circle-fill"></i> 24x7 Unlimited Teleconsultation</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Teleconsultation Specialities</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Full-Body Health Checkup</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Dietician/Nutrition Counselling</li>
                             </ul>
                         </div>
                         <button class="choose-btn text-white mt-auto pricing-btn" data-bs-toggle="modal"
@@ -471,13 +485,21 @@
                 </div>
 
                 <!-- Gold Plan -->
-                <div class="col-md-3" data-plan="Gold" data-price="$98"
-                    data-features='["All Basic Features", "Lab Test Integration", "Nutrition Coaching", "Health Monitoring"]'>
+                <div class="col-md-3" data-plan="Gold" data-price="$98" data-features='[
+                    "All Silver Feature Plus",
+                    "1 Year Subscription for Online Yoga/Zumba Clases",
+                    "24x7 Care Co-Ordinator",
+                    "Insurance (3 Lakhs Premium)- Health + Accidental Policy",
+                    "Diabetes Management - 3 Months",
+                    "Mental Health Wellness (psychologist) - 6 Consultations"
+                    ]' data-extra-features=''>
                     <div
                         class="position-relative pricing-card p-4 h-100 shadow-lg d-flex flex-column justify-content-between">
                         <div>
                             <div class="pricing-plan-name mb-2">Gold</div>
-                            <div class="pricing-price mb-3">$98 / Year</div>
+                            <div class="pricing-price mb-2">$98 / Year</div>
+                            <div class="pricing-foot mb-3 text-muted">All <span style="color: #C0C0C0;">Silver</span>
+                                Feature Plus</div>
                             <ul class="feature-list text-start">
                                 <li><i class="bi bi-check-circle-fill"></i> All Basic Features</li>
                                 <li><i class="bi bi-check-circle-fill"></i> Lab Test Integration</li>
@@ -491,12 +513,19 @@
                 </div>
 
                 <!-- Diamond Plan -->
-                <div class="col-md-3" data-plan="Diamond" data-price="$110"
-                    data-features='["All Essential Features", "In-home Care", "Mental Wellness", "Ayurveda & Emergency"]'>
+                <div class="col-md-3" data-plan="Diamond" data-price="$110" data-features='[
+                        "All Gold Feature Plus",
+                        "Lifestyle Management (weight loss)",
+                        "Fertility guidance",
+                        "Diabetes Management - 6 Months",
+                        "Mental Health Wellness (psychologist) - 12 Consultations"
+                    ]' data-extra-features=''>
                     <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="pricing-plan-name mb-2">Diamond</div>
-                            <div class="pricing-price mb-3">$110 / Year</div>
+                            <div class="pricing-price mb-2">$110 / Year</div>
+                            <div class="pricing-foot mb-3 text-muted">All <span style="color: #FFD700;">Gold</span>
+                                Feature Plus</div>
                             <ul class="feature-list text-start">
                                 <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
                                 <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
@@ -510,12 +539,17 @@
                 </div>
 
                 <!-- Platinum Plan -->
-                <div class="col-md-3" data-plan="Platinum" data-price="$139"
-                    data-features='["All Essential Features", "In-home Care", "Mental Wellness", "Ayurveda & Emergency"]'>
+                <div class="col-md-3" data-plan="Platinum" data-price="$139" data-features='[
+                        "All Diamond Feature Plus",
+                        "Diabetes Management - 12 Months",
+                        "Mental Health Wellness (psychologist) - Unlimited"
+                    ]' data-extra-features=''>
                     <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="pricing-plan-name mb-2">Platinum</div>
-                            <div class="pricing-price mb-3">$139 / Year</div>
+                            <div class="pricing-price mb-2">$139 / Year</div>
+                            <div class="pricing-foot mb-3 text-muted">All <span style="color: #B9F2FF;">Diamond</span>
+                                Feature Plus</div>
                             <ul class="feature-list text-start">
                                 <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
                                 <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
@@ -554,7 +588,7 @@
 
     <!-- Subscription Form Modal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content p-3">
                 <div class="modal-header">
                     <h5 class="modal-title fw-bold" id="subscribeModalLabel">Subscribe to Plan</h5>
@@ -563,26 +597,81 @@
 
                 <div class="modal-body">
                     <form id="subscriptionForm">
-                        <div class="mb-3">
-                            <label for="yourName" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="yourName" required>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="yourName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="yourName" required
+                                    placeholder="Enter your name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="yourCountry" class="form-label">Your Country</label>
+                                <select class="form-select" id="yourCountry" required>
+                                    <option value="">Select Country</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="India">India</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="UAE">UAE</option>
+                                    <option value="UK">UK</option>
+                                    <option value="USA">USA</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phoneNumber" class="form-label">Your Phone Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="countryCode">+91</span>
+                                    <input type="tel" class="form-control" id="phoneNumber" required
+                                        placeholder="Enter phone number">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="selectedPlan" class="form-label">Selected Plan</label>
+                                <input type="text" class="form-control" id="selectedPlan" readonly>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="planPrice" class="form-label">Plan Price</label>
+                                <input type="text" class="form-control" id="planPrice" readonly>
+                            </div>
+                        </div>
+
+                        <hr class="my-3" />
+                        <h6 class="fw-bold">Loved One(s) Information</h6>
+                        <div id="lovedOnesGroup">
+                            <div class="loved-one-entry row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="lovedOneName[]" required
+                                        placeholder="Name">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="tel" class="form-control" name="lovedOnePhone[]" required
+                                        placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="lovedOneAddress[]" required
+                                        placeholder="Address">
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="lovedOneName" class="form-label">Loved One Name</label>
-                            <input type="text" class="form-control" id="lovedOneName" required>
+                            <button type="button" class="btn btn-outline-primary btn-sm" id="addLovedOne">+ Add
+                                More</button>
                         </div>
-                        <div class="mb-3">
-                            <label for="phoneNumber" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <textarea class="form-control" id="address" rows="3" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="selectedPlan" class="form-label">Selected Plan</label>
-                            <input type="text" class="form-control" id="selectedPlan" readonly>
-                        </div>
+
                         <button type="submit" class="pricing-btn w-100">Submit Subscription</button>
                     </form>
                 </div>
@@ -1056,39 +1145,177 @@
             });
         })();
 
-        // Populate first modal
+        // 1) Populate the Plan Details modal
         document.querySelectorAll('.choose-btn').forEach(button => {
             button.addEventListener('click', function () {
-                const parent = button.closest('[data-plan]');
-                const plan = parent.getAttribute('data-plan');
-                const price = parent.getAttribute('data-price');
-                const features = JSON.parse(parent.getAttribute('data-features'));
+                const card = this.closest('[data-plan]');
+                const plan = card.getAttribute('data-plan');
+                const price = card.getAttribute('data-price');
+                const features = JSON.parse(card.getAttribute('data-features'));
 
-                document.getElementById('modal-plan-name').textContent = plan;
+                document.getElementById('modal-plan-name').textContent = plan + " Plan";
                 document.getElementById('modal-plan-price').textContent = price;
-                document.getElementById('modal-feature-list').innerHTML =
-                    features.map(f => `<li><i class="bi bi-check-circle-fill text-success me-2"></i> ${f}</li>`).join('');
 
-                document.getElementById('selectedPlan').value = `${plan} - ${price}`;
+                const featureList = document.getElementById('modal-feature-list');
+                featureList.innerHTML = "";
+
+                features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="bi bi-check-circle-fill text-success me-2"></i> ${feature}`;
+                    featureList.appendChild(li);
+                });
             });
         });
 
-        // Open second modal on subscribe
+        // 2) When "Subscribe" in Plan Details is clicked…
         document.getElementById('openSubscribeForm').addEventListener('click', function () {
-            const firstModal = bootstrap.Modal.getInstance(document.getElementById('planModal'));
-            firstModal.hide();
+            // hide the Plan Details modal
+            const planModalEl = document.getElementById('planModal');
+            const planModal = bootstrap.Modal.getInstance(planModalEl);
+            planModal.hide();
 
+            // remove its backdrop
+            const backdrops = document.querySelectorAll('.modal-backdrop');
+            backdrops.forEach(bd => bd.remove());
+
+            // show the Subscription Form modal
             const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
             subscribeModal.show();
         });
 
-        // Optional: Handle form submission
+        // 3) On subscription form submit…
         document.getElementById('subscriptionForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Subscription submitted successfully!');
-            bootstrap.Modal.getInstance(document.getElementById('subscribeModal')).hide();
+
+            const subscribeModalEl = document.getElementById('subscribeModal');
+            const subscribeModal = bootstrap.Modal.getInstance(subscribeModalEl);
+            subscribeModal.hide();
+
+            // remove its backdrop too
+            const backdrops = document.querySelectorAll('.modal-backdrop');
+            backdrops.forEach(bd => bd.remove());
+
             this.reset();
         });
+
+        let selectedPlanName = "";
+        let selectedPlanPrice = "";
+
+        // Update selectedPlanName & selectedPlanPrice when clicking "View Plan"
+        document.querySelectorAll('.choose-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('[data-plan]');
+                selectedPlanName = card.getAttribute('data-plan');
+                selectedPlanPrice = card.getAttribute('data-price');
+
+                const features = JSON.parse(card.getAttribute('data-features'));
+
+                document.getElementById('modal-plan-name').textContent = selectedPlanName + " Plan";
+                document.getElementById('modal-plan-price').textContent = selectedPlanPrice;
+
+                const featureList = document.getElementById('modal-feature-list');
+                featureList.innerHTML = "";
+
+                features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="bi bi-check-circle-fill text-success me-2"></i> ${feature}`;
+                    featureList.appendChild(li);
+                });
+            });
+        });
+
+        // Show subscription modal with pre-filled plan info
+        document.getElementById('openSubscribeForm').addEventListener('click', function () {
+            bootstrap.Modal.getInstance(document.getElementById('planModal')).hide();
+            document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+
+            document.getElementById('selectedPlan').value = selectedPlanName;
+            document.getElementById('planPrice').value = selectedPlanPrice;
+
+            new bootstrap.Modal(document.getElementById('subscribeModal')).show();
+        });
+
+        // Add more loved ones
+        document.getElementById('addLovedOne').addEventListener('click', () => {
+            const container = document.createElement('div');
+            container.classList.add('loved-one-entry', 'row', 'g-3', 'mb-3');
+            container.innerHTML = `
+      <div class="col-md-4">
+        <input type="text" class="form-control" name="lovedOneName[]" required placeholder="Name">
+      </div>
+      <div class="col-md-4">
+        <input type="tel" class="form-control" name="lovedOnePhone[]" required placeholder="Phone Number">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" name="lovedOneAddress[]" required placeholder="Address">
+      </div>
+      <div class="col-md-1 d-flex align-items-center">
+        <button type="button" class="btn btn-danger btn-sm remove-loved-one">x</button>
+      </div>
+    `;
+            document.getElementById('lovedOnesGroup').appendChild(container);
+        });
+
+        // Remove loved one entry
+        document.getElementById('lovedOnesGroup').addEventListener('click', function (e) {
+            if (e.target.classList.contains('remove-loved-one')) {
+                e.target.closest('.loved-one-entry').remove();
+            }
+        });
+
+        // On form submit
+        document.getElementById('subscriptionForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Subscription submitted successfully!');
+
+            bootstrap.Modal.getInstance(document.getElementById('subscribeModal')).hide();
+            document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+
+            this.reset();
+            // Reset initial loved ones group
+            document.getElementById('lovedOnesGroup').innerHTML = `
+      <div class="loved-one-entry row g-3 mb-3">
+        <div class="col-md-4">
+          <input type="text" class="form-control" name="lovedOneName[]" required placeholder="Name">
+        </div>
+        <div class="col-md-4">
+          <input type="tel" class="form-control" name="lovedOnePhone[]" required placeholder="Phone Number">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" name="lovedOneAddress[]" required placeholder="Address">
+        </div>
+      </div>
+    `;
+        });
+
+        const countryToCode = {
+            "India": "+91",
+            "Saudi Arabia": "+966",
+            "USA": "+1",
+            "Malaysia": "+60",
+            "Sri Lanka": "+94",
+            "Singapore": "+65",
+            "UAE": "+971",
+            "UK": "+44",
+            "Canada": "+1",
+            "Australia": "+61",
+            "Kuwait": "+965",
+            "Germany": "+49",
+            "Switzerland": "+41",
+            "South Africa": "+27",
+            "Qatar": "+974",
+            "Oman": "+968",
+            "New Zealand": "+64"
+        };
+
+        // Change phone code when country changes
+        document.getElementById('yourCountry').addEventListener('change', function () {
+            const selected = this.value;
+            const code = countryToCode[selected] || "";
+            document.getElementById('countryCode').textContent = code;
+        });
+
 
         document.addEventListener("DOMContentLoaded", () => {
             const counters = document.querySelectorAll(".help-card h5");

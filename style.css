@@ -244,6 +244,31 @@ body {
     --background-color: #ffffff;
 }
 
+.navmenu li a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navmenu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* no gap */
+  width: 0%;
+  height: 2px;
+  background-color: #239FA7;
+  transition: width 0.3s ease;
+}
+
+.navmenu li:hover a {
+  color: #239FA7;
+}
+
+.navmenu li:hover a::after {
+  width: 100%;
+}
 
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
