@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nizcare | 360</title>
+    <title>Nizcare | NRI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -13,7 +13,8 @@
     <!-- intl-tel-input CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -28,11 +29,11 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="" class="">Home<br></a></li>
-                    <li><a href="">How It Works</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="doctorPage/clinicpage.html">Pricing Plans</a></li>
-                    <li><a href="doctorPage/clinicpage.html">Contact</a></li>
+                    <li><a href="#hero" class="">Home<br></a></li>
+                    <li><a href="#our-services">Services</a></li>
+                    <li><a href="#pricing">Pricing Plans</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#enquiry-form">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none fa-solid fa-bars"></i>
             </nav>
@@ -85,7 +86,7 @@
 
                     <p class="text-muted fs-5">
                         we make quality care seamless, accessible, and worry-free — wherever you
-                            are in the world
+                        are in the world
                     </p>
 
                     <p class="text-muted fs-5">
@@ -272,7 +273,7 @@
         </div>
     </section>
 
-    <section class="our-services py-5">
+    <section class="our-services py-5" id="our-services">
         <div class="container">
 
             <div class="section-title" data-aos="fade-up">
@@ -443,92 +444,153 @@
         </div>
     </section>
 
-    <section class="pricing py-5">
+    <section class="pricing py-5" id="pricing">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2 class="fw-bold mb-2">Pricing Plans</h2>
+                <h2 class="fw-bold mb-4 text-center">Pricing Plans</h2>
             </div>
 
             <div class="row g-4 justify-content-center">
 
                 <!-- Silver Plan -->
-                <div class="col-md-3">
-                    <div class="position-relative pricing-card p-4 h-100">
-                        <div class="pricing-plan-name mb-2">Silver</div>
-                        <div class="pricing-price mb-3">$59</div>
-                        <!-- <div class="text-muted mb-3">₹4,999 yearly</div> -->
-                        <ul class="feature-list text-start">
-                            <li><i class="bi bi-check-circle-fill"></i> Teleconsults</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Appointment Booking</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Health Reminders</li>
-                        </ul>
-                        <button class="btn btn-warning mt-4 choose-btn text-white">Choose Plan</button>
+                <div class="col-md-3" data-plan="Silver" data-price="$59"
+                    data-features='["Teleconsults", "Appointment Booking", "Health Reminders"]'>
+                    <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="pricing-plan-name mb-2">Silver</div>
+                            <div class="pricing-price mb-3">$59 / Year</div>
+                            <ul class="feature-list text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> Teleconsults</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Appointment Booking</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Health Reminders</li>
+                            </ul>
+                        </div>
+                        <button class="choose-btn text-white mt-auto pricing-btn" data-bs-toggle="modal"
+                            data-bs-target="#planModal">View Plan</button>
                     </div>
                 </div>
 
                 <!-- Gold Plan -->
-                <div class="col-md-3">
-                    <div class="position-relative pricing-card p-4 h-100 shadow-lg">
-                        <!-- <span class="popular-badge">Popular</span> -->
-                        <div class="pricing-plan-name mb-2">Gold</div>
-                        <div class="pricing-price mb-3">$98</div>
-                        <!-- <div class="text-muted mb-3">₹9,999 yearly</div> -->
-                        <ul class="feature-list text-start">
-                            <li><i class="bi bi-check-circle-fill"></i> All Basic Features</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Lab Test Integration</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Nutrition Coaching</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Health Monitoring</li>
-                        </ul>
-                        <button class="btn btn-warning text-white mt-4 choose-btn">Choose Plan</button>
+                <div class="col-md-3" data-plan="Gold" data-price="$98"
+                    data-features='["All Basic Features", "Lab Test Integration", "Nutrition Coaching", "Health Monitoring"]'>
+                    <div
+                        class="position-relative pricing-card p-4 h-100 shadow-lg d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="pricing-plan-name mb-2">Gold</div>
+                            <div class="pricing-price mb-3">$98 / Year</div>
+                            <ul class="feature-list text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> All Basic Features</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Lab Test Integration</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Nutrition Coaching</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Health Monitoring</li>
+                            </ul>
+                        </div>
+                        <button class="choose-btn mt-auto pricing-btn text-white" data-bs-toggle="modal"
+                            data-bs-target="#planModal">View Plan</button>
                     </div>
                 </div>
 
                 <!-- Diamond Plan -->
-                <div class="col-md-3">
-                    <div class="position-relative pricing-card p-4 h-100">
-                        <div class="pricing-plan-name text-dark mb-2">Diamond</div>
-                        <div class="pricing-price mb-3">$110</div>
-                        <!-- <div class="text-muted mb-3">₹19,999 yearly</div> -->
-                        <ul class="feature-list text-start">
-                            <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
-                            <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Mental Wellness</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ayurveda & Emergency</li>
-                        </ul>
-                        <button class="btn btn-warning text-white mt-4 choose-btn">Choose Plan</button>
+                <div class="col-md-3" data-plan="Diamond" data-price="$110"
+                    data-features='["All Essential Features", "In-home Care", "Mental Wellness", "Ayurveda & Emergency"]'>
+                    <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="pricing-plan-name mb-2">Diamond</div>
+                            <div class="pricing-price mb-3">$110 / Year</div>
+                            <ul class="feature-list text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
+                                <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Mental Wellness</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ayurveda & Emergency</li>
+                            </ul>
+                        </div>
+                        <button class="choose-btn mt-auto pricing-btn text-white" data-bs-toggle="modal"
+                            data-bs-target="#planModal">View Plan</button>
                     </div>
                 </div>
 
                 <!-- Platinum Plan -->
-                <div class="col-md-3">
-                    <div class="position-relative pricing-card p-4 h-100">
-                        <div class="pricing-plan-name text-dark mb-2">Platinum</div>
-                        <div class="pricing-price mb-3">$139</div>
-                        <!-- <div class="text-muted mb-3">₹19,999 yearly</div> -->
-                        <ul class="feature-list text-start">
-                            <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
-                            <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Mental Wellness</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ayurveda & Emergency</li>
-                        </ul>
-                        <button class="btn btn-warning text-white mt-4 choose-btn">Choose Plan</button>
+                <div class="col-md-3" data-plan="Platinum" data-price="$139"
+                    data-features='["All Essential Features", "In-home Care", "Mental Wellness", "Ayurveda & Emergency"]'>
+                    <div class="position-relative pricing-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="pricing-plan-name mb-2">Platinum</div>
+                            <div class="pricing-price mb-3">$139 / Year</div>
+                            <ul class="feature-list text-start">
+                                <li><i class="bi bi-check-circle-fill"></i> All Essential Features</li>
+                                <li><i class="bi bi-check-circle-fill"></i> In-home Care</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Mental Wellness</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ayurveda & Emergency</li>
+                            </ul>
+                        </div>
+                        <button class="choose-btn pricing-btn text-white" data-bs-toggle="modal"
+                            data-bs-target="#planModal">View Plan</button>
                     </div>
                 </div>
 
-
             </div>
-
-            <!-- Chat Help Section -->
-            <!-- <div class="chat-help-box">
-                <button class="chat-help-btn mt-3">
-                    📞 Chat with Us Now
-                </button>
-            </div> -->
-
         </div>
     </section>
 
-    <section class="how-it-works py-5">
+    <!-- MODAL For Suscription -->
+    <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="planModalLabel">Plan Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 id="modal-plan-name" class="fw-bold mb-2"></h6>
+                    <p id="modal-plan-price" class="text-primary fw-semibold mb-3"></p>
+                    <ul id="modal-feature-list" class="list-unstyled mb-3"></ul>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <button class="pricing-btn" id="openSubscribeForm">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscription Form Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="subscribeModalLabel">Subscribe to Plan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="subscriptionForm">
+                        <div class="mb-3">
+                            <label for="yourName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="yourName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lovedOneName" class="form-label">Loved One Name</label>
+                            <input type="text" class="form-control" id="lovedOneName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="selectedPlan" class="form-label">Selected Plan</label>
+                            <input type="text" class="form-control" id="selectedPlan" readonly>
+                        </div>
+                        <button type="submit" class="pricing-btn w-100">Submit Subscription</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="how-it-works py-5" id="how-it-works">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
                 <h2 class="fw-bold mb-2">How it Works</h2>
@@ -561,7 +623,8 @@
                         <div class="step-badge">3</div>
                         <i class="bi bi-hospital step-icon"></i>
                         <h5 class="mt-3">We Coordinate Everything</h5>
-                        <p class="text-muted">From appointments, follow-ups, and regular health monitoring we handle everything for your family</p>
+                        <p class="text-muted">From appointments, follow-ups, and regular health monitoring we handle
+                            everything for your family</p>
                     </div>
                 </div>
 
@@ -710,7 +773,7 @@
         </div>
     </section>
 
-    <section class="enquiry-form">
+    <section class="enquiry-form" id="enquiry-form">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -970,33 +1033,88 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- intl-tel-input JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        (function () {
+            const header = document.getElementById('header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                    // Scrolling down & beyond 100px: hide header
+                    header.classList.add('hidden');
+                } else {
+                    // Scrolling up: show header
+                    header.classList.remove('hidden');
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        })();
+
+        // Populate first modal
+        document.querySelectorAll('.choose-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const parent = button.closest('[data-plan]');
+                const plan = parent.getAttribute('data-plan');
+                const price = parent.getAttribute('data-price');
+                const features = JSON.parse(parent.getAttribute('data-features'));
+
+                document.getElementById('modal-plan-name').textContent = plan;
+                document.getElementById('modal-plan-price').textContent = price;
+                document.getElementById('modal-feature-list').innerHTML =
+                    features.map(f => `<li><i class="bi bi-check-circle-fill text-success me-2"></i> ${f}</li>`).join('');
+
+                document.getElementById('selectedPlan').value = `${plan} - ${price}`;
+            });
+        });
+
+        // Open second modal on subscribe
+        document.getElementById('openSubscribeForm').addEventListener('click', function () {
+            const firstModal = bootstrap.Modal.getInstance(document.getElementById('planModal'));
+            firstModal.hide();
+
+            const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+            subscribeModal.show();
+        });
+
+        // Optional: Handle form submission
+        document.getElementById('subscriptionForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Subscription submitted successfully!');
+            bootstrap.Modal.getInstance(document.getElementById('subscribeModal')).hide();
+            this.reset();
+        });
+
         document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".help-card h5");
-    const speed = 300; // lower = faster
+            const counters = document.querySelectorAll(".help-card h5");
+            const speed = 300; // lower = faster
 
-    counters.forEach((counter) => {
-      const original = counter.innerText;
-      const target = +original.replace(/[^0-9]/g, ""); // Remove non-numeric
+            counters.forEach((counter) => {
+                const original = counter.innerText;
+                const target = +original.replace(/[^0-9]/g, ""); // Remove non-numeric
 
-      let count = 0;
+                let count = 0;
 
-      const updateCount = () => {
-        const increment = Math.ceil(target / speed);
+                const updateCount = () => {
+                    const increment = Math.ceil(target / speed);
 
-        if (count < target) {
-          count += increment;
-          counter.innerText = count.toLocaleString() + "+";
-          setTimeout(updateCount, 10);
-        } else {
-          counter.innerText = target.toLocaleString() + "+";
-        }
-      };
+                    if (count < target) {
+                        count += increment;
+                        counter.innerText = count.toLocaleString() + "+";
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target.toLocaleString() + "+";
+                    }
+                };
 
-      updateCount();
-    });
-  });
+                updateCount();
+            });
+        });
 
 
         const phoneInputField = document.querySelector("#phone");
@@ -1023,8 +1141,6 @@
             initialCountry: "in",
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
-
-
 
         // Menbar Toggle
         (function () {

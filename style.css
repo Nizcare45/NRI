@@ -160,7 +160,7 @@ body {
 .header {
     color: #000;
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 8px 0;
     transition: all 0.5s;
     z-index: 997;
 }
@@ -192,6 +192,15 @@ body {
     color: #fff;
     background: color-mix(in srgb, #1da69a, transparent 10%);
 }
+
+/* style.css */
+.header {
+  transition: transform 0.3s ease;
+}
+.header.hidden {
+  transform: translateY(-100%);
+}
+
 
 .btn-getstarted {
     text-decoration: none;
@@ -692,6 +701,22 @@ body {
 .pricing-plan-name {
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+.pricing-btn {
+    background-color: #239FA7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-btn:hover {
+    background-color: #ffaf34;
+    transition: all 0.3s ease;
 }
 
 .feature-list {
