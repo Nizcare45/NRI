@@ -96,10 +96,12 @@
                 <!-- Right Video -->
                 <div class="col-lg-5 d-flex justify-content-center align-items-center" data-aos="zoom-in"
                     data-aos-delay="500">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8t9kF9Cll1s?si=B-qn3RgNxi9D7N09"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-container">
+        <video id="myVideo" autoplay muted loop>
+            <source src="./assets/Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
                 </div>
             </div>
         </div>
@@ -1127,6 +1129,16 @@
             });
         })();
 
+        const video = document.getElementById("myVideo");
+
+        video.addEventListener("mouseenter", () => {
+            video.controls = true;
+        });
+
+        video.addEventListener("mouseleave", () => {
+            video.controls = false;
+        });
+        
         // 1) Populate the Plan Details modal
         document.querySelectorAll('.choose-btn').forEach(button => {
             button.addEventListener('click', function () {
