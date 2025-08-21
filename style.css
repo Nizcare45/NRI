@@ -742,6 +742,14 @@ body {
     font-size: 16px;
 }
 
+.table-brand {
+    --bs-table-bg: #1da69a;
+    /* header background */
+    --bs-table-color: #ffffff;
+    /* header text color */
+    --bs-table-border-color: rgba(0, 0, 0, .1);
+}
+
 /* Bootstrap 4 fallback */
 thead.table-brand th {
     background-color: #1da69a !important;
